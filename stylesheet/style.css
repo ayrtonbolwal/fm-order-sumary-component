@@ -24,6 +24,10 @@ body{
     align-items: center;
 
     background-color: var(--paleBlue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .target{
@@ -134,6 +138,9 @@ body{
 
 
 @media screen and (max-width: 450px) {
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
     .target{
         width: 90%;
     }
