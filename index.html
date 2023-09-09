@@ -3,28 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="stylesheet/style.css">
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
   <main class="target">
+    <img src="./images/illustration-hero.svg" alt="" class="target__heroImage">
+    <div class="target__info">
+      <section class="target__info-desc">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+      </section>
+      <section class="target__info-plan">
+        <div class="target__info-plan__desc">
+          <img src="./images/icon-music.svg" alt="">
+          <div class="target__info-plan__desc-data">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        <a href="" class="target__info-plan__change">Change</a>
+      </section>
+      <section class="target__info-buttons">
+        <button class="target__info-buttons-payment">Proceed to Payment</button>
+        <a href="" class="target__info-buttons-cancel">Cancel Order</a>
+      </section>
+    </div>
+  </main>
+  <!-- <main class="target">
     <img src="./images/illustration-hero.svg" alt="Hero Image" class="target__image">
     <section class="target__info">
-      <h1 class="target__info-header">Order Summary</h1>
-      <p class="target__info-data">You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!</p>
-    </section>
-    <section class="target__plan">
-      <img src="./images/icon-music.svg" alt="Icon music">
-      <div class="target__plan-info">
-        <p>Annual Plan</p>
-        <p>$59.99/year</p>
+      <div class="target__info-desc">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
       </div>
-      <a href="#">Change</a>
-    </section>
-    <button class="target__btn-proceed">Proceed to Payment</button>
-    <button class="target__btn-cancel">Cancel order</button>
+      <div class="target__info-plan">
+        <div class="target__info-plan__left">
+          <img src="./images/icon-music.svg" alt="Icon music">
+          <div class="target__info-plan__desc">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <div>
+        <button>Proceed to Payment</button>
+        <button>Cancel order</button>
+      </div>
+    </section> -->
+    
+
   </main>
 </body>
 </html>
