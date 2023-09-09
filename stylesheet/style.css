@@ -32,7 +32,7 @@ body{
     overflow: hidden;
 
     background-color: var(--veryPaleBlue);
-    box-shadow: 0px 5px 10px 2px #12121220;
+    box-shadow: 0px 5px 10px 2px #12121210;
 }
 .target__heroImage{
     width: 100%;
@@ -57,7 +57,7 @@ body{
 }
 .target__info-desc p{
     font-size: .9rem;
-    color: var(--darkBlue);
+    color: var(--desaturatedBlue);
 }
 
 
@@ -107,7 +107,7 @@ body{
     justify-content: center;
     gap: 1.4rem;
 }
-.target__info-buttons-payment{
+.target__info-buttons__payment{
     width: 100%;
     padding: .7rem;
     border-radius: .5rem;
@@ -118,16 +118,34 @@ body{
     font-size: .9rem;
     box-shadow: 0px 5px 10px 2px #12121220;
 }
-.target__info-buttons-payment:hover{
+.target__info-buttons__payment:hover{
     background-color: var(--desaturatedBlue);
     cursor: pointer;
 }
-.target__info-buttons-cancel{
+.target__info-buttons__cancel{
     font-weight: 700;
     text-decoration: none;
     color: var(--paleBlue);
     font-size: .9rem;
 }
-.target__info-buttons-cancel:hover{
+.target__info-buttons__cancel:hover{
     color: var(--darkBlue);
+}
+
+
+@media screen and (max-width: 450px) {
+    .target{
+        width: 90%;
+    }
+    .target__info-desc p{
+        padding: 0rem .5rem;
+        font-size: 1.1rem;
+    }
+    .target__info-buttons__payment{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .target__info-buttons__cancel{
+        font-size: 1rem;
+    }
 }
